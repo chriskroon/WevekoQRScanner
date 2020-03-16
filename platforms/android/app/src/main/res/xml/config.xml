@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="weveko.qr.scanner" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <name>WevekoQRScanner</name>
+    <description>
+        Weveko QR Scanner
+    </description>
+    <author email="chris@seolab.nl" href="https://seolab.nl">
+        SEOlab
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>Cameratoegang nodig om QR te scannen</string>
+    </edit-config>
+    <preference name="loglevel" value="DEBUG" />
+</widget>
