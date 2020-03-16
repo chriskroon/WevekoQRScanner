@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "WevekoQRScanner",
+  "short_name": "WevekoQRScanner",
+  "version": "weveko.qr.scanner",
+  "description": "Weveko QR Scanner",
+  "author": "SEOlab",
+  "icons": [],
+  "start_url": "index.html"
+}

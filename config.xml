@@ -9,4 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+  <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+      <string>Cameratoegang nodig om QR te scannen</string>
+  </edit-config>    
 </widget>
